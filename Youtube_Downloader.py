@@ -7,7 +7,7 @@ while True:
             url = input("Enter the youtube video url")
             video = PY(url)
             stream = video.streams.get_highest_resolution()
-            #video.register_on_complete_callback(r"C:\Users\Jayant\OneDrive\Desktop")
+            #video.register_on_complete_callback("Enter your Directory here")
             video.register_on_progress_callback(stream)
             stream.download()
         except:
